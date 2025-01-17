@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Registro Completo!</title>
+  <style>
+    /* Importación de la fuente Montserrat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+    /* Estilos generales */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/img/Diapo\ 3.png') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .page-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+    }
+
+    /* Caja principal */
+    .loading-box {
+      position: relative;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+      animation: glow-breathe 4s infinite;
+      overflow: hidden;
+    }
+
+    @keyframes glow-breathe {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background: #444;
+      border-radius: 10px;
+      margin: 1rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress {
+      width: 90%;
+      height: 100%;
+      background: linear-gradient(to right, #b8860b, #daa520, #ffd700);
+    }
+
+    .percentage {
+      position: absolute;
+      right: 10px;
+      top: 2px;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    .gold-text {
+      font-size: 1rem;
+      color: #ffd700;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #ffd700, #b8860b);
+      border: none;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 10px 5px rgba(212, 175, 55, 0.8);
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #2a2827;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #444;
+    }
+
+    .footer-container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      width: 150px;
+    }
+
+    .social-links img {
+      width: 30px;
+      margin-left: 1rem;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .social-links img:hover {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <div class="loading-box">
+      <h1>¡PERFECTO REINA!</h1>
+      <p>En breve te envío el acceso.</p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+        <div class="percentage">90%</div>
+      </div>
+      <p>Si querés tener una experiencia completa, te dejo estos pasos:</p>
+      <p class="gold-text">¡Hablame a mi Telegram!</p>
+      <a href="https://t.me/tu_telegram" class="btn">Hablar con Alana</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <img src="img/logo png.png" alt="Logo" class="footer-logo">
+      <div class="social-links">
+        <a href="https://www.instagram.com/alana.saurit/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@alana.saurit" target="_blank"><img src="img/youtube.png" alt="YouTube"></a>
+        <a href="https://www.tiktok.com/@alana.saurit.ok?_t=ZM-8t8vEjq0K4U&_r=1" target="_blank"><img src="img/TikTok.png" alt="TikTok"></a>
+        <a href="https://www.facebook.com/profile.php?id=100077446463855&mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
